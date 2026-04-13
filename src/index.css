@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 97%;
+    --foreground: 20 20% 15%;
+
+    --card: 30 20% 99%;
+    --card-foreground: 20 20% 15%;
+
+    --popover: 30 20% 99%;
+    --popover-foreground: 20 20% 15%;
+
+    /* Maroon/dark red from logo */
+    --primary: 0 68% 33%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 15% 93%;
+    --secondary-foreground: 20 20% 15%;
+
+    --muted: 30 15% 94%;
+    --muted-foreground: 20 10% 50%;
+
+    /* Gold/warm accent */
+    --accent: 0 85% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 0 68% 33%;
+
+    --radius: 0.75rem;
+
+    --cafe-warm: 30 40% 95%;
+    --cafe-cream: 40 30% 92%;
+    --cafe-brown: 0 40% 18%;
+    --cafe-gold: 40 85% 55%;
+    --offer-bg: 0 68% 33%;
+    --offer-foreground: 0 0% 100%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Swiper custom styles */
+.swiper-pagination-bullet {
+  background: hsl(var(--primary-foreground)) !important;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: hsl(var(--primary)) !important;
+}

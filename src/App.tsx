@@ -22,7 +22,7 @@ const App = () => (
       <CartProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/chatfastfoodcorner">
           <div className="min-h-screen flex flex-col">
             <Navbar />
             <Routes>
